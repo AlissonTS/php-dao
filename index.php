@@ -20,9 +20,16 @@
 	$usuario->login("root", "123");
 	echo $usuario; */
 
+	/* Criando novo usuário
 	$aluno = new Usuario("aluno2", "aluno2Senha");
-
 	$aluno->insert();
+	echo $aluno; */
 
-	echo $aluno;
+	$usuario = new Usuario();
+
+	$usuario->loadById(6);
+
+	$usuario->update("Professor", "123");
+
+	echo $usuario;
 ?>
