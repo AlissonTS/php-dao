@@ -15,9 +15,14 @@
 	$search = Usuario::search("root");
 	echo json_encode($search); */
 
-	// Carrega um usuário usando um login e a senha
+	/* Carrega um usuário usando um login e a senha
 	$usuario = new Usuario();
 	$usuario->login("root", "123");
+	echo $usuario; */
 
-	echo $usuario;
+	$aluno = new Usuario("aluno2", "aluno2Senha");
+
+	$aluno->insert();
+
+	echo $aluno;
 ?>
