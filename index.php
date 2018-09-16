@@ -25,11 +25,17 @@
 	$aluno->insert();
 	echo $aluno; */
 
+	/* Alterar usuário
 	$usuario = new Usuario();
-
 	$usuario->loadById(6);
-
 	$usuario->update("Professor", "123");
+	echo $usuario; */
+
+	// Excluir usuário
+	$usuario = new Usuario();
+	$usuario->loadById(7);
+
+	$usuario->delete();
 
 	echo $usuario;
 ?>
